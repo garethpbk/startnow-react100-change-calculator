@@ -3,9 +3,9 @@ import React, { Component } from "react";
 function Denomination(props) {
   return (
     <div className="col-3">
-      <div className="card bg-light text-center p-2">
+      <div className="card well bg-light text-center p-2">
         <h4>{props.amount}</h4>
-        <h4 className="display-5">{props.number}</h4>
+        <p className="display-5 lead">{props.number}</p>
       </div>
     </div>
   );
@@ -140,7 +140,7 @@ class App extends Component {
           <div className="col-8">
             <div className="card">
               <div className="card-body">
-                <div className="card bg-success text-white text-center p-3">
+                <div className="card alert alert-success bg-success text-white text-center p-3">
                   <strong>The total change due is ${this.state.difference}</strong>
                 </div>
                 <div className="container">
